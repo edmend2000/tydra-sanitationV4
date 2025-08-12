@@ -362,7 +362,7 @@
         await fetch('https://script.google.com/macros/s/AKfycbwhYRlgZFDZML8TCzNlynPq1JYdRX2lo8bjZzf5nu2BnosWPbIs-FjB0z0eHMzhMWQ/exec', {
           method: 'POST',
           mode: 'no-cors',
-          headers: { 'Content-Type': 'application/json' },
+          headers: { 'Content-Type': 'text/plain' },
           body: JSON.stringify(data)
         });
         try { window.plausible && window.plausible('lead_submitted'); } catch(_) {}
