@@ -10,39 +10,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    html { scroll-behavior: smooth; }
-    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
-    .glass { backdrop-filter: blur(8px); background: rgba(255,255,255,0.7); }
-    .brand-gradient { background: linear-gradient(135deg, #0ea5e9, #6366f1); }
-    .ba-wrap { position: relative; overflow: hidden; border-radius: 1rem; }
-    .ba-img { display:block; width:100%; height:auto; }
-    .ba-after { position:absolute; inset:0; overflow:hidden; }
-    .ba-after img { width:100%; height:100%; object-fit:cover; }
-    .ba-slider { position:absolute; left:0; right:0; bottom:1rem; margin:0 auto; width:60%; }
-    .dot { width:10px; height:10px; border-radius:9999px; background:#cbd5e1; }
-    .dot.active { background:#0ea5e9; }
+    html{scroll-behavior:smooth} body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
+    .glass{backdrop-filter:blur(8px);background:rgba(255,255,255,0.7)}
+    .brand-gradient{background:linear-gradient(135deg,#0ea5e9,#6366f1)}
+    .ba-wrap{position:relative;overflow:hidden;border-radius:1rem} .ba-img{display:block;width:100%;height:auto}
+    .ba-after{position:absolute;inset:0;overflow:hidden} .ba-after img{width:100%;height:100%;object-fit:cover}
+    .ba-slider{position:absolute;left:0;right:0;bottom:1rem;margin:0 auto;width:60%}
+    .dot{width:10px;height:10px;border-radius:9999px;background:#cbd5e1} .dot.active{background:#0ea5e9}
   </style>
-  <!-- Plausible Analytics -->
   <script defer data-domain="tydrasanitation.com" src="https://plausible.io/js/script.js"></script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Tydra Sanitation",
-    "description": "Junk pickup, move-in/move-out cleaning, biohazard sanitation, construction cleanup, and yard debris services.",
-    "areaServed": "Greater San Antonio, TX",
-    "telephone": "+1-210-818-3966",
-    "email": "edmend2000@gmail.com",
-    "url": "https://tydrasanitation.com/",
-    "sameAs": [],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "San Antonio",
-      "addressRegion": "TX",
-      "addressCountry": "US"
-    }
-  }
-  </script>
 </head>
 <body class="bg-slate-50 text-slate-800">
   <header class="w-full sticky top-0 z-50">
@@ -55,31 +31,22 @@
           Tydra Sanitation
         </a>
         <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
-          <a href="#services" class="hover:opacity-90">Services</a>
-          <a href="#quote" class="hover:opacity-90">Get a Quote</a>
-          <a href="#gallery" class="hover:opacity-90">Gallery</a>
-          <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
-          <a href="#reviews" class="hover:opacity-90">Reviews</a>
-          <a href="#process" class="hover:opacity-90">How it works</a>
-          <a href="#faq" class="hover:opacity-90">FAQ</a>
-          <a href="#contact" class="hover:opacity-90">Contact</a>
+          <a href="#services">Services</a><a href="#quote">Get a Quote</a><a href="#gallery">Gallery</a>
+          <a href="#testimonials">Testimonials</a><a href="#reviews">Reviews</a><a href="#process">How it works</a>
+          <a href="#faq">FAQ</a><a href="#contact">Contact</a>
           <a href="tel:+12108183966" class="ml-2 inline-flex items-center rounded-xl bg-white/10 px-3 py-1.5 hover:bg-white/20">Call: (210) 818-3966</a>
         </nav>
-        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center rounded-xl bg-white/10 px-3 py-2 hover:bg-white/20" aria-label="Open menu">
+        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center rounded-xl bg-white/10 px-3 py-2" aria-label="Open menu">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
         </button>
       </div>
     </div>
     <div id="mobileMenu" class="md:hidden hidden bg-white shadow">
       <div class="mx-auto max-w-6xl px-4 py-3 grid gap-2 text-sm">
-        <a href="#services" class="py-2">Services</a>
-        <a href="#quote" class="py-2">Get a Quote</a>
-        <a href="#gallery" class="py-2">Gallery</a>
-        <a href="#testimonials" class="py-2">Testimonials</a>
-        <a href="#reviews" class="py-2">Reviews</a>
-        <a href="#process" class="py-2">How it works</a>
-        <a href="#faq" class="py-2">FAQ</a>
-        <a href="#contact" class="py-2">Contact</a>
+        <a href="#services" class="py-2">Services</a><a href="#quote" class="py-2">Get a Quote</a>
+        <a href="#gallery" class="py-2">Gallery</a><a href="#testimonials" class="py-2">Testimonials</a>
+        <a href="#reviews" class="py-2">Reviews</a><a href="#process" class="py-2">How it works</a>
+        <a href="#faq" class="py-2">FAQ</a><a href="#contact" class="py-2">Contact</a>
         <a href="tel:+12108183966" class="py-2 font-semibold">Call: (210) 818-3966</a>
       </div>
     </div>
@@ -90,40 +57,21 @@
     <div class="mx-auto max-w-6xl px-4 py-20 relative">
       <div class="grid md:grid-cols-2 items-center gap-10">
         <div>
-          <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">
-            Clean spaces. Clear head. <span class="text-sky-600">Tydra</span> gets it done.
-          </h1>
+          <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">Clean spaces. Clear head. <span class="text-sky-600">Tydra</span> gets it done.</h1>
           <p class="mt-4 text-lg text-slate-600">Junk pickup, move-in/move-out cleaning, biohazard sanitation, construction cleanup, and yard debris — serving Greater San Antonio.</p>
           <div class="mt-6 flex flex-wrap items-center gap-3">
-            <a href="tel:+12108183966" class="inline-flex items-center rounded-2xl bg-sky-600 px-4 py-2 text-white font-semibold shadow hover:bg-sky-700">
-              Call now
-            </a>
+            <a href="tel:+12108183966" class="inline-flex items-center rounded-2xl bg-sky-600 px-4 py-2 text-white font-semibold shadow hover:bg-sky-700">Call now</a>
             <a href="#quote" class="inline-flex items-center rounded-2xl border border-slate-300 px-4 py-2 font-semibold hover:bg-white">Get a fast quote</a>
           </div>
         </div>
         <div class="relative">
           <div class="rounded-3xl shadow-xl ring-1 ring-black/5 glass p-6">
             <div class="grid grid-cols-2 gap-4 text-sm">
-              <div class="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200">
-                <div class="font-bold">Junk Pickup</div>
-                <p class="text-slate-600">Appliances, furniture, bagged trash, garage cleanouts.</p>
-              </div>
-              <div class="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200">
-                <div class="font-bold">Move-In/Out</div>
-                <p class="text-slate-600">Deep cleans between tenants or before listing.</p>
-              </div>
-              <div class="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200">
-                <div class="font-bold">Biohazard Sanitation</div>
-                <p class="text-slate-600">Restore livable conditions with heavy-duty cleanup & sanitizing.</p>
-              </div>
-              <div class="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200">
-                <div class="font-bold">Construction Cleanup</div>
-                <p class="text-slate-600">Rough & final clean, jobsite sweep-outs.</p>
-              </div>
-              <div class="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200 col-span-2">
-                <div class="font-bold">Yard Debris</div>
-                <p class="text-slate-600">Branches, leaves, storm debris, light hauling.</p>
-              </div>
+              <div class="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200"><div class="font-bold">Junk Pickup</div><p class="text-slate-600">Appliances, furniture, bagged trash, garage cleanouts.</p></div>
+              <div class="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200"><div class="font-bold">Move-In/Out</div><p class="text-slate-600">Deep cleans between tenants or before listing.</p></div>
+              <div class="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200"><div class="font-bold">Biohazard Sanitation</div><p class="text-slate-600">Hoarding, pest-heavy sites, deep sanitizing.</p></div>
+              <div class="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200"><div class="font-bold">Construction Cleanup</div><p class="text-slate-600">Rough & final clean, jobsite sweep‑outs.</p></div>
+              <div class="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200 col-span-2"><div class="font-bold">Yard Debris</div><p class="text-slate-600">Branches, leaves, storm debris, light hauling.</p></div>
             </div>
           </div>
         </div>
@@ -135,39 +83,20 @@
     <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">What we do</h2>
     <p class="mt-2 text-slate-600">Straightforward jobs. Straight-up service.</p>
     <div class="mt-8 grid md:grid-cols-3 gap-6">
-      <article class="rounded-2xl bg-white p-6 shadow ring-1 ring-slate-200">
-        <div class="flex items-center gap-2 font-bold text-sky-700">Junk Pickup</div>
-        <p class="mt-2 text-sm text-slate-600">Sofas, mattresses, appliances, bagged trash, garage/attic clear-outs. Transparent pricing by load or item.</p>
-      </article>
-      <article class="rounded-2xl bg-white p-6 shadow ring-1 ring-slate-200">
-        <div class="flex items-center gap-2 font-bold text-sky-700">Move-In/Move-Out Cleaning</div>
-        <p class="mt-2 text-sm text-slate-600">Turnover cleans for apartments, rentals, and homes. Kitchens, baths, floors, baseboards, and more.</p>
-      </article>
-      <article class="rounded-2xl bg-white p-6 shadow ring-1 ring-slate-200">
-        <div class="flex items-center gap-2 font-bold text-sky-700">Biohazard Sanitation</div>
-        <p class="mt-2 text-sm text-slate-600">Hoarding, pest-heavy sites, and tough situations that need deep cleanup & sanitizing.</p>
-      </article>
-      <article class="rounded-2xl bg-white p-6 shadow ring-1 ring-slate-200">
-        <div class="flex items-center gap-2 font-bold text-sky-700">Construction Cleanup</div>
-        <p class="mt-2 text-sm text-slate-600">Rough & final cleans: sweep/vacuum, dust removal, window wipe-downs, and haul-away of light debris.</p>
-      </article>
-      <article class="rounded-2xl bg-white p-6 shadow ring-1 ring-slate-200">
-        <div class="flex items-center gap-2 font-bold text-sky-700">Yard Debris</div>
-        <p class="mt-2 text-sm text-slate-600">Branches, leaves, bagging, and light hauling (no large tree removals or hazardous waste).</p>
-      </article>
-      <article class="rounded-2xl bg-white p-6 shadow ring-1 ring-slate-200">
-        <div class="flex items-center gap-2 font-bold text-sky-700">Custom Jobs</div>
-        <p class="mt-2 text-sm text-slate-600">Have something unique? Text a photo for a quick ballpark.</p>
-      </article>
+      <article class="rounded-2xl bg-white p-6 shadow ring-1 ring-slate-200"><div class="font-bold text-sky-700">Junk Pickup</div><p class="mt-2 text-sm text-slate-600">Sofas, mattresses, appliances, bagged trash, garage/attic clear-outs.</p></article>
+      <article class="rounded-2xl bg-white p-6 shadow ring-1 ring-slate-200"><div class="font-bold text-sky-700">Move-In/Move-Out Cleaning</div><p class="mt-2 text-sm text-slate-600">Turnover cleans for apartments, rentals, and homes.</p></article>
+      <article class="rounded-2xl bg-white p-6 shadow ring-1 ring-slate-200"><div class="font-bold text-sky-700">Biohazard Sanitation</div><p class="mt-2 text-sm text-slate-600">Hoarding, pest-heavy sites, and tough situations that need deep cleanup & sanitizing.</p></article>
+      <article class="rounded-2xl bg-white p-6 shadow ring-1 ring-slate-200"><div class="font-bold text-sky-700">Construction Cleanup</div><p class="mt-2 text-sm text-slate-600">Rough & final cleans: dust removal, window wipe-downs, light debris.</p></article>
+      <article class="rounded-2xl bg-white p-6 shadow ring-1 ring-slate-200"><div class="font-bold text-sky-700">Yard Debris</div><p class="mt-2 text-sm text-slate-600">Branches, leaves, bagging, and light hauling.</p></article>
+      <article class="rounded-2xl bg-white p-6 shadow ring-1 ring-slate-200"><div class="font-bold text-sky-700">Custom Jobs</div><p class="mt-2 text-sm text-slate-600">Have something unique? Text a photo for a quick ballpark.</p></article>
     </div>
   </section>
 
-  <!-- Get a Quote (mini booking form) -->
   <section id="quote" class="mx-auto max-w-6xl px-4 py-16">
     <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Get a fast quote</h2>
-    <p class="mt-2 text-slate-600">Every job’s different. Send pics and a brief description—we’ll reply with a quick ballpark and confirm on-site.</p>
+    <p class="mt-2 text-slate-600">Send pics and a brief description—we’ll reply with a quick ballpark and confirm on-site.</p>
     <div class="mt-8 grid md:grid-cols-2 gap-6 items-start">
-      <form id="quoteForm" class="rounded-2xl bg-white p-6 shadow ring-1 ring-slate-200 grid gap-3">
+      <form id="quoteForm" onsubmit="return sendLead(event)" class="rounded-2xl bg-white p-6 shadow ring-1 ring-slate-200 grid gap-3" novalidate>
         <div class="grid md:grid-cols-2 gap-3">
           <input name="name" required placeholder="Name" class="rounded-2xl border border-slate-300 px-4 py-3" />
           <input name="phone" required placeholder="Phone" class="rounded-2xl border border-slate-300 px-4 py-3" />
@@ -178,12 +107,8 @@
         </div>
         <div class="grid md:grid-cols-2 gap-3">
           <select name="service" class="rounded-2xl border border-slate-300 px-4 py-3">
-            <option>Junk Pickup</option>
-            <option>Move-In/Move-Out</option>
-            <option>Biohazard Sanitation</option>
-            <option>Construction Cleanup</option>
-            <option>Yard Debris</option>
-            <option>Other</option>
+            <option>Junk Pickup</option><option>Move-In/Move-Out</option><option>Biohazard Sanitation</option>
+            <option>Construction Cleanup</option><option>Yard Debris</option><option>Other</option>
           </select>
           <input name="timing" placeholder="Preferred time window" class="rounded-2xl border border-slate-300 px-4 py-3" />
         </div>
@@ -203,10 +128,8 @@
     </div>
   </section>
 
-  <!-- Before/After slider + gallery -->
   <section id="gallery" class="mx-auto max-w-6xl px-4 py-16">
     <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Gallery</h2>
-    <p class="mt-2 text-slate-600">Before/after shots and recent jobs.</p>
     <div class="mt-8 grid gap-6">
       <div class="ba-wrap shadow ring-1 ring-slate-200">
         <img src="assets/before.jpg" alt="Before" class="ba-img" id="baBefore">
@@ -214,75 +137,50 @@
         <input type="range" id="baSlider" class="ba-slider" min="0" max="100" value="50" aria-label="Before/after slider">
       </div>
       <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-        <img src="assets/gallery-1.jpg" alt="Job photo 1" class="rounded-2xl shadow ring-1 ring-slate-200">
-        <img src="assets/gallery-2.jpg" alt="Job photo 2" class="rounded-2xl shadow ring-1 ring-slate-200">
-        <img src="assets/gallery-3.jpg" alt="Job photo 3" class="rounded-2xl shadow ring-1 ring-slate-200">
-        <img src="assets/gallery-4.jpg" alt="Job photo 4" class="rounded-2xl shadow ring-1 ring-slate-200">
-        <img src="assets/gallery-5.jpg" alt="Job photo 5" class="rounded-2xl shadow ring-1 ring-slate-200">
-        <img src="assets/gallery-6.jpg" alt="Job photo 6" class="rounded-2xl shadow ring-1 ring-slate-200">
+        <img src="assets/gallery-1.jpg" class="rounded-2xl shadow ring-1 ring-slate-200">
+        <img src="assets/gallery-2.jpg" class="rounded-2xl shadow ring-1 ring-slate-200">
+        <img src="assets/gallery-3.jpg" class="rounded-2xl shadow ring-1 ring-slate-200">
+        <img src="assets/gallery-4.jpg" class="rounded-2xl shadow ring-1 ring-slate-200">
+        <img src="assets/gallery-5.jpg" class="rounded-2xl shadow ring-1 ring-slate-200">
+        <img src="assets/gallery-6.jpg" class="rounded-2xl shadow ring-1 ring-slate-200">
       </div>
     </div>
   </section>
 
-  <!-- Rotating testimonials carousel -->
   <section id="testimonials" class="mx-auto max-w-6xl px-4 py-16">
     <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Testimonials</h2>
     <div class="mt-8 rounded-3xl bg-white p-6 shadow ring-1 ring-slate-200">
-      <div id="testimonialCard" class="transition-opacity duration-500">
-        <!-- JS injects active testimonial here -->
-      </div>
-      <div class="mt-4 flex items-center justify-center gap-2" id="dots" aria-label="Testimonial navigation">
-        <!-- JS injects dots -->
-      </div>
+      <div id="testimonialCard" class="transition-opacity duration-500"></div>
+      <div class="mt-4 flex items-center justify-center gap-2" id="dots" aria-label="Testimonial navigation"></div>
     </div>
   </section>
 
-  <!-- Review CTA -->
   <section id="reviews" class="mx-auto max-w-6xl px-4 py-16">
     <div class="brand-gradient rounded-3xl p-8 text-white shadow">
       <div class="grid md:grid-cols-2 gap-6 items-center">
-        <div>
-          <h3 class="text-2xl md:text-3xl font-extrabold">Love the work?</h3>
-          <p class="mt-2 text-sm text-white/90">Reviews help a ton. Tap below to leave one in 30 seconds.</p>
-        </div>
+        <div><h3 class="text-2xl md:text-3xl font-extrabold">Love the work?</h3><p class="mt-2 text-sm text-white/90">Reviews help a ton. Tap below to leave one.</p></div>
         <div class="flex flex-wrap gap-3 md:justify-end">
           <a href="https://www.google.com/search?q=Tydra+Sanitation+San+Antonio+reviews" id="reviewLink" class="inline-flex items-center rounded-2xl bg-white px-4 py-2 font-semibold text-slate-900">Leave a Google review</a>
           <a href="mailto:edmend2000@gmail.com?subject=Feedback%20on%20Tydra%20job" class="inline-flex items-center rounded-2xl border border-white px-4 py-2 font-semibold">Send feedback</a>
         </div>
       </div>
     </div>
-    <p class="mt-3 text-xs text-slate-500">Tip: replace the review link with your Google Business Profile review URL (see README).</p>
   </section>
 
   <section id="process" class="mx-auto max-w-6xl px-4 py-16">
     <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">How it works</h2>
     <div class="mt-8 grid md:grid-cols-3 gap-6">
-      <div class="rounded-2xl bg-white p-6 shadow ring-1 ring-slate-200">
-        <div class="text-sm font-semibold text-sky-700">1) Reach out</div>
-        <p class="mt-2 text-sm text-slate-600">Text, email, or submit the form with photos and details.</p>
-      </div>
-      <div class="rounded-2xl bg-white p-6 shadow ring-1 ring-slate-200">
-        <div class="text-sm font-semibold text-sky-700">2) We show up</div>
-        <p class="mt-2 text-sm text-slate-600">On time, ready to work. We load, clean, and sanitize as requested.</p>
-      </div>
-      <div class="rounded-2xl bg-white p-6 shadow ring-1 ring-slate-200">
-        <div class="text-sm font-semibold text-sky-700">3) Done & dusted</div>
-        <p class="mt-2 text-sm text-slate-600">Walkthrough + payment. Cash, card, or invoice available.</p>
-      </div>
+      <div class="rounded-2xl bg-white p-6 shadow ring-1 ring-slate-200"><div class="text-sm font-semibold text-sky-700">1) Reach out</div><p class="mt-2 text-sm text-slate-600">Text, email, or submit the form with photos.</p></div>
+      <div class="rounded-2xl bg-white p-6 shadow ring-1 ring-slate-200"><div class="text-sm font-semibold text-sky-700">2) We show up</div><p class="mt-2 text-sm text-slate-600">On time, ready to work. We load, clean, and sanitize as requested.</p></div>
+      <div class="rounded-2xl bg-white p-6 shadow ring-1 ring-slate-200"><div class="text-sm font-semibold text-sky-700">3) Done & dusted</div><p class="mt-2 text-sm text-slate-600">Walkthrough + payment. Cash, card, or invoice available.</p></div>
     </div>
   </section>
 
   <section id="faq" class="mx-auto max-w-6xl px-4 py-16">
     <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">FAQ</h2>
     <div class="mt-6 grid md:grid-cols-2 gap-6">
-      <details class="rounded-2xl bg-white p-5 shadow ring-1 ring-slate-200">
-        <summary class="cursor-pointer font-semibold">How do you price jobs?</summary>
-        <p class="mt-2 text-sm text-slate-600">By volume/weight, access, and scope. Send photos for a quick ballpark; we confirm on-site.</p>
-      </details>
-      <details class="rounded-2xl bg-white p-5 shadow ring-1 ring-slate-200">
-        <summary class="cursor-pointer font-semibold">What areas do you serve?</summary>
-        <p class="mt-2 text-sm text-slate-600">Greater San Antonio, TX. Ask about surrounding cities.</p>
-      </details>
+      <details class="rounded-2xl bg-white p-5 shadow ring-1 ring-slate-200"><summary class="cursor-pointer font-semibold">How do you price jobs?</summary><p class="mt-2 text-sm text-slate-600">By volume/weight, access, and scope. Send photos for a quick ballpark; we confirm on-site.</p></details>
+      <details class="rounded-2xl bg-white p-5 shadow ring-1 ring-slate-200"><summary class="cursor-pointer font-semibold">What areas do you serve?</summary><p class="mt-2 text-sm text-slate-600">Greater San Antonio, TX. Ask about surrounding cities.</p></details>
     </div>
   </section>
 
@@ -291,40 +189,25 @@
       <div class="grid md:grid-cols-3 gap-8 items-start">
         <div>
           <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Contact</h2>
-          <p class="mt-2 text-slate-600">Fastest way: text a photo of the job.</p>
+          <p class="mt-2 text-slate-600">Fastest: text a photo of the job.</p>
           <ul class="mt-4 space-y-2 text-sm">
-            <li><span class="font-semibold">Phone:</span> <a class="underline hover:no-underline" href="tel:+12108183966">(210) 818-3966</a></li>
-            <li><span class="font-semibold">Text:</span> <a class="underline hover:no-underline" href="sms:+12108183966?&body=Hi%20Tydra%20—%20Here%20are%20photos%20for%20a%20quote:">(210) 818-3966</a></li>
-            <li><span class="font-semibold">Email:</span> <a class="underline hover:no-underline" href="mailto:edmend2000@gmail.com">edmend2000@gmail.com</a></li>
+            <li><span class="font-semibold">Phone:</span> <a href="tel:+12108183966" class="underline">(210) 818-3966</a></li>
+            <li><span class="font-semibold">Text:</span> <a href="sms:+12108183966?&body=Hi%20Tydra%20—%20Here%20are%20photos%20for%20a%20quote:" class="underline">(210) 818-3966</a></li>
+            <li><span class="font-semibold">Email:</span> <a href="mailto:edmend2000@gmail.com" class="underline">edmend2000@gmail.com</a></li>
             <li><span class="font-semibold">Hours:</span> Mon–Sun by appointment</li>
           </ul>
         </div>
         <form class="grid gap-3" action="mailto:edmend2000@gmail.com" method="post" enctype="text/plain">
-          <div>
-            <label class="sr-only" for="name">Name</label>
-            <input id="name" name="Name" required placeholder="Name" class="w-full rounded-2xl border border-slate-300 px-4 py-3" />
-          </div>
-          <div>
-            <label class="sr-only" for="email">Email</label>
-            <input id="email" name="Email" type="email" required placeholder="Email" class="w-full rounded-2xl border border-slate-300 px-4 py-3" />
-          </div>
-          <div>
-            <label class="sr-only" for="phone">Phone</label>
-            <input id="phone" name="Phone" placeholder="Phone" class="w-full rounded-2xl border border-slate-300 px-4 py-3" />
-          </div>
-          <div>
-            <label class="sr-only" for="message">Message</label>
-            <textarea id="message" name="Message" rows="4" placeholder="Tell us about your project..." class="w-full rounded-2xl border border-slate-300 px-4 py-3"></textarea>
-          </div>
+          <input name="Name" required placeholder="Name" class="w-full rounded-2xl border border-slate-300 px-4 py-3" />
+          <input name="Email" type="email" required placeholder="Email" class="w-full rounded-2xl border border-slate-300 px-4 py-3" />
+          <input name="Phone" placeholder="Phone" class="w-full rounded-2xl border border-slate-300 px-4 py-3" />
+          <textarea name="Message" rows="4" placeholder="Tell us about your project..." class="w-full rounded-2xl border border-slate-300 px-4 py-3"></textarea>
           <button class="rounded-2xl bg-sky-600 px-4 py-3 font-semibold text-white hover:bg-sky-700" type="submit">Send</button>
-          <p class="text-xs text-slate-500">Submitting opens your email client to send us a message. For photos, attach them to the email.</p>
+          <p class="text-xs text-slate-500">Submitting opens your email client. Attach photos there.</p>
         </form>
-        <div class="md:col-span-1 grid place-items-center gap-3">
+        <div class="grid place-items-center gap-3">
           <img src="assets/text-us-qr.png" alt="Scan to text photos to (210) 818-3966" class="h-40 w-40 rounded-xl ring-1 ring-slate-200 shadow" />
-          <div class="text-center text-sm text-slate-600">
-            Scan to text photos<br/>
-            <span class="font-semibold">(210) 818-3966</span>
-          </div>
+          <div class="text-center text-sm text-slate-600">Scan to text photos<br/><span class="font-semibold">(210) 818-3966</span></div>
         </div>
       </div>
     </div>
@@ -338,94 +221,35 @@
 
   <script>
     // mobile menu
-    const btn = document.getElementById('menuBtn');
-    const menu = document.getElementById('mobileMenu');
-    btn?.addEventListener('click', () => menu.classList.toggle('hidden'));
-
+    const btn=document.getElementById('menuBtn');const menu=document.getElementById('mobileMenu');btn&&btn.addEventListener('click',()=>menu.classList.toggle('hidden'));
     // footer year
-    document.getElementById('year').textContent = new Date().getFullYear();
-
+    document.getElementById('year').textContent=new Date().getFullYear();
     // before/after slider
-    const slider = document.getElementById('baSlider');
-    const after = document.getElementById('baAfter');
-    slider?.addEventListener('input', (e) => { after.style.width = e.target.value + '%'; });
+    const slider=document.getElementById('baSlider');const after=document.getElementById('baAfter');slider&&slider.addEventListener('input',e=>after.style.width=e.target.value+'%');
 
-    // mini booking form -> Google Apps Script + Plausible + thank-you redirect
-    const form = document.getElementById('quoteForm');
-    const msg = document.getElementById('quoteMsg');
-    form?.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      msg.textContent = 'Sending...';
-      const data = Object.fromEntries(new FormData(form).entries());
-      data.timestamp = new Date().toISOString();
-      try {
-        await fetch('https://script.google.com/macros/s/AKfycbwIxBmvil2UIJ-PSWfdZj7zPn7eSClDaesjnk7qMTKHqwkaUaHKCtj-2KfiHLX5j1Lk/exec
-', {
-          method: 'POST',
-          mode: 'no-cors',
-          headers: { 'Content-Type': 'text/plain' },
-          body: JSON.stringify(data)
-        });
-        try { window.plausible && window.plausible('lead_submitted'); } catch(_) {}
-        window.location.href = 'thank-you.html';
-      } catch (err) {
-        msg.textContent = 'Saved locally. If this persists, text us at (210) 818-3966.';
-        console.error(err);
-      }
-    });
-
-    // Rotating testimonials
-    const testimonials = [
-      { stars: '★★★★★', quote: 'Called Tydra for a last‑minute junk pickup—showed up fast and knocked it out. Super easy.', name: 'Maria G., Alamo Heights' },
-      { stars: '★★★★★', quote: 'They handled a heavy biohazard clean with respect and got the space livable again.', name: 'C. Rivera, San Antonio' },
-      { stars: '★★★★★', quote: 'Construction dust everywhere—gone. Final clean looked listing‑ready.', name: 'Daniel P., Stone Oak' },
-      { stars: '★★★★★', quote: 'Great communication and fair on price. Texted photos and got a same‑day slot.', name: 'Andre L., Leon Valley' },
-      { stars: '★★★★★', quote: 'Move‑out clean + junk haul in one visit. Landlord was impressed.', name: 'Nikki T., Live Oak' },
-      { stars: '★★★★★', quote: 'Courteous crew. Yard debris from the storm was gone in one go.', name: 'Harper S., Helotes' }
+    // rotating testimonials
+    const testimonials=[
+      {stars:'★★★★★',quote:'Called Tydra for a last‑minute junk pickup—showed up fast and knocked it out. Super easy.',name:'Maria G., Alamo Heights'},
+      {stars:'★★★★★',quote:'They handled a heavy biohazard clean with respect and got the space livable again.',name:'C. Rivera, San Antonio'},
+      {stars:'★★★★★',quote:'Construction dust everywhere—gone. Final clean looked listing‑ready.',name:'Daniel P., Stone Oak'},
+      {stars:'★★★★★',quote:'Great communication and fair on price. Same‑day slot after texting photos.',name:'Andre L., Leon Valley'},
+      {stars:'★★★★★',quote:'Move‑out clean + junk haul in one visit. Landlord was impressed.',name:'Nikki T., Live Oak'}
     ];
-    let idx = 0;
-    const card = document.getElementById('testimonialCard');
-    const dots = document.getElementById('dots');
+    let idx=0;const card=document.getElementById('testimonialCard');const dots=document.getElementById('dots');
+    function render(i){const t=testimonials[i];card.style.opacity=0;setTimeout(()=>{card.innerHTML=`<figure class="rounded-2xl p-6"><div class="text-yellow-500" aria-hidden="true">${t.stars}</div><blockquote class="mt-2 text-sm text-slate-700">“${t.quote}”</blockquote><figcaption class="mt-3 text-xs text-slate-500">— ${t.name}</figcaption></figure>`;[...dots.children].forEach((d,di)=>d.classList.toggle('active',di===i));card.style.opacity=1;},150);}
+    testimonials.forEach((_,i)=>{const d=document.createElement('button');d.className='dot';d.setAttribute('aria-label','Go to testimonial '+(i+1));d.addEventListener('click',()=>{idx=i;render(idx);});dots.appendChild(d);});
+    let timer=null;function start(){timer=setInterval(()=>{idx=(idx+1)%testimonials.length;render(idx);},5000);}function stop(){if(timer)clearInterval(timer);}
+    card.addEventListener('mouseenter',stop);card.addEventListener('mouseleave',start);render(idx);start();
 
-    function render(i) {
-      const t = testimonials[i];
-      card.style.opacity = 0;
-      setTimeout(() => {
-        card.innerHTML = `
-          <figure class="rounded-2xl p-6">
-            <div class="text-yellow-500" aria-hidden="true">${t.stars}</div>
-            <blockquote class="mt-2 text-sm text-slate-700">“${t.quote}”</blockquote>
-            <figcaption class="mt-3 text-xs text-slate-500">— ${t.name}</figcaption>
-          </figure>
-        `;
-        [...dots.children].forEach((d, di) => d.classList.toggle('active', di === i));
-        card.style.opacity = 1;
-      }, 150);
+    // submit handler (guaranteed redirect)
+    function sendLead(e){
+      e.preventDefault();
+      const form=document.getElementById('quoteForm');const msg=document.getElementById('quoteMsg');
+      msg&&(msg.textContent='Sending...');
+      const data=Object.fromEntries(new FormData(form).entries());data.timestamp=new Date().toISOString();
+      fetch('https://script.google.com/macros/s/AKfycbwIxBmvil2UIJ-PSWfdZj7zPn7eSClDaesjnk7qMTKHqwkaUaHKCtj-2KfiHLX5j1Lk/exec',{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain'},body:JSON.stringify(data)}).catch(()=>{}).finally(()=>{try{window.plausible&&window.plausible('lead_submitted');}catch(_){} window.location.href='thank-you.html';});
+      return false;
     }
-
-    // dots
-    testimonials.forEach((_, i) => {
-      const d = document.createElement('button');
-      d.className = 'dot';
-      d.setAttribute('aria-label', 'Go to testimonial ' + (i+1));
-      d.addEventListener('click', () => { idx = i; render(idx); });
-      dots.appendChild(d);
-    });
-
-    // autoplay with pause on hover
-    let timer = null;
-    function start() { timer = setInterval(() => { idx = (idx + 1) % testimonials.length; render(idx); }, 5000); }
-    function stop() { if (timer) clearInterval(timer); }
-    card.addEventListener('mouseenter', stop);
-    card.addEventListener('mouseleave', start);
-
-    render(idx);
-    start();
-
-    // Review link convenience (easy to update later)
-    const REVIEW_URL = 'https://www.google.com/search?q=Tydra+Sanitation+San+Antonio+reviews';
-    const rl = document.getElementById('reviewLink');
-    if (rl && REVIEW_URL) rl.href = REVIEW_URL;
   </script>
 </body>
 </html>
